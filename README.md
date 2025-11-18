@@ -4,7 +4,7 @@ My first attempt I tried to implement a FastAPI backend and a Next.JS frontend. 
 
 This time, I am going to stick to the task at hand.
 
-First, I am going to create a search egine using semantic chunking and cosine similarity. It will be very very basic. All of the indeces will be saved locally and easily implemented. This will give me the optiopn later do add things on top of my semantic search -- hybrid search, knowledge graph, etc. I am going to allow queries to natural language queries. The results will return the top 5 most similar patents (Title and doc_number) and the most similar claim to the query in each of those patents. See Set up below for part 1:
+First, I am going to create a search egine using semantic chunking and cosine similarity. It will be very very basic. All of the indeces will be saved locally and easily implemented. If a JSON does not have all the required data, I drop it none of it is chunked. This will give me the optiopn later do add things on top of my semantic search -- hybrid search, knowledge graph, etc. I am going to allow queries to natural language queries. The results will return the top 5 most similar patents (Title and doc_number) and the most similar claim to the query in each of those patents. See Set up below for part 1:
 
 
 STEP BY STEP (CURSOR IS THE GOAT)
@@ -62,7 +62,7 @@ UI provides:
 - Query box returning top-5 patents with best claim per patent (title, doc_number, scores)
 
 
-Part 2 is going to be brief just because my orginal attempt took a lot of time and I want to be fair.
+## Part 2
 
 So, I am going to tackle one and a half problems. First, my streamlit UI gives a gooid terminal interfacer that users can interact with. However, due to time constraints I am not going to deal with log in or simultaneous use. However, on the "failed" attempt, the easiest adjustment would be to add a prisma database to give users accounts and allow them to log in (I have used google auth for this before).
 

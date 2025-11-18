@@ -2,7 +2,7 @@
   "model_name": "sentence-transformers/all-MiniLM-L6-v2",
   "dim": 384,
   "num_vectors": 22184,
-  "created_at": 1763438924,
+  "created_at": 1763440654,
   "data_dir": "data",
   "index_path": "vector_store\\index.faiss",
   "metadata_path": "vector_store\\metadata.jsonl",
