@@ -1,0 +1,33 @@
+# Paths
+data_dir: "data"
+index_dir: "vector_store"
+
+# Embedding model
+model_name: "sentence-transformers/all-MiniLM-L6-v2"
+batch_size: 256
+
+# Chunking -- PICK UR CHUNK SIZE
+chunk:
+  method: "chars"
+  size: 1200
+  overlap: 200
+
+# Fields to extract from patent JSON
+fields:
+  # Titles
+  - "title"
+  # Abstract
+  - "abstract"
+  # Descriptions
+  - "detailed_description"
+  # Claims
+  - "claims"
+
+# Candidate ID fields in JSON
+id_fields:
+  - "title"
+  - "doc_number"
+  - "filename"
+
+# Store chunk text in metadata.jsonl for retrieval
+store_text_in_metadata: true
