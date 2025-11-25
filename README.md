@@ -7,7 +7,7 @@ This time, I am going to stick to the task at hand.
 First, I am going to create a search egine using semantic chunking and cosine similarity. It will be very very basic. All of the indeces will be saved locally and easily implemented. If a JSON does not have all the required data, I drop it none of it is chunked. This will give me the optiopn later do add things on top of my semantic search -- hybrid search, knowledge graph, etc. I am going to allow queries to natural language queries. The results will return the top 5 most similar patents (Title and doc_number) and the most similar claim to the query in each of those patents. See Set up below for part 1:
 
 
-STEP BY STEP (CURSOR IS THE GOAT)
+STEP BY STEP
 
 Setup:
 - Initialize (only once if you don’t already have a project):
@@ -68,7 +68,7 @@ So, I am going to tackle one and a half problems. First, my streamlit UI gives a
 
 For the full problem I am going to complete, I will do my best to improve my basic semantic algorithm with a graph bases reranking. I plan to take the top 100 candidates, then make a similarity matrix between them (100 x 100). I will then perform Random Walk Reranking and return the top 5 canditates used from my random walk reranking.
 
-## Search modes (MORE CURSOR)
+## Search modes
 
 ### Graph Adjusted (Random-Walk reranking)
 - Pool selection:
